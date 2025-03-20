@@ -1,0 +1,110 @@
+:root {
+  --brand: #01b5fb;
+  --sub: #6ac754;
+  --body: #516171;
+  --border: rgba(0,0,0,0.08);
+  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.finance{
+  background: linear-gradient(to right,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/image-2/finanace-bg.avif") fixed center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.finanace-content{
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.finanace-content a{
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  color: white;
+  border: 2px solid white;
+  transition: all 0.5s;
+}
+.finanace-content a:hover{
+  background-color: white;
+  color: black;
+}
+
+
+/**Courses**/
+
+.mv{
+  overflow: hidden;
+}
+.mv-img{
+  overflow: hidden;
+}
+.mv-img img{
+  object-fit: cover;
+}
+.mv .mv-row .mv-img img{
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+.mv .mv-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 991px){
+  /* .mv-row .mission-content{
+    margin-bottom: 30px;
+  } */
+  /* .mv-row .mv-content{
+    margin-bottom: 30px;
+  } */
+  .mv .mv-row{
+    margin-bottom: 50px;
+  }
+  .mv .mv-row .mv-img{
+    margin-bottom: 30px;
+    order: 1;
+  }
+  .mv .mv-row .mv-content{
+    order: 2;
+  }
+}
+
+@media (max-width: 370px){
+  .mv .mv-row .mv-img, .mv .mv-row .mv-content{
+    width: 100%;
+  }
+}
+
+.mv-content h3{
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.accordion-header button{
+  color: #1c1c1c !important;
+  background-color: rgba(77, 84, 181, 0.363);
+ }
+ .accordion-header button:active{
+   /* background-color: rgb(194, 9, 193,.1); */
+  background-color: rgba(77, 84, 181, 0.363);
+ }
+
+ .faq-row{
+  display: flex;
+  align-items: center;
+ }
+
+ .accordion-body{
+  padding-bottom: 2px;
+ }
+
+ .faq-img img{
+  filter: brightness(0.9);
+  border-radius: 10px;
+ }
